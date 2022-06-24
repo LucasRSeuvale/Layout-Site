@@ -11,11 +11,6 @@ body {
     background-color: black;
 }
 
-.text-test {
-    color: white;
-    margin-bottom: 20px;
-    font-family: 'Ubuntu', 'sans-serif';
-}
 
 .max-width {
     max-width: 1500px;
@@ -150,11 +145,11 @@ body {
     margin-top: 20px;
     font-weight: 300;
     border-radius: 6px;
-
+    border: solid #b02ab7;
+    transition: all 0.3s ease;
 }
 
 .top .top-content a:hover {
-    border: 2px solid #b02ab7;
     color: #b02ab7;
     background: none;
 }
@@ -163,25 +158,72 @@ body {
     color: white;
     background-color: black;
     font-family: 'Poppins', 'sans-serif';
- 
+
 }
 
-.services .serv-content{
+.services .serv-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
-    
-.services .title{
+
+.services .title {
     text-align: center;
-    margin: 40px 0;
+    margin-bottom: 40px;
+    margin-top: 40px;
     font-weight: 400;
     font-size: 35px;
 }
 
-.services .serv-content .card{
-    width: calc(33% - 20 px);
-    background: rgb(46, 38, 38)
+.services .serv-content .card {
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+}
 
+.services .serv-content .card:hover {
+    background: #b02ab7;
+
+}
+
+.services .serv-content .card i {
+    font-size: 50px;
+    color: #b02ab7;
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover i {
+    color: white;
+
+}
+
+.services .serv-content .card .box {
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover .box {
+    transform: scale(1.05);
+}
+
+.services .serv-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+@media(.max-width: 947px) {
+    .serv .serv-content .card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 690px) {
+    .services .serv-content .card {
+        width: 100%;
+    }
 }
