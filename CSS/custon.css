@@ -217,7 +217,7 @@ body {
     margin: 10px 0 7px 0;
 }
 
-@media(.max-width: 947px) {
+@media(max-width: 947px) {
     .serv .serv-content .card {
         width: calc(50% - 10px);
         margin-bottom: 20px;
