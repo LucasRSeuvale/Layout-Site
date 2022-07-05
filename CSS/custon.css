@@ -430,3 +430,32 @@ footer span a:hover {
         margin-top: 50px;
     }
 }
+
+.contact{
+    color:white;
+    background:#0c0f16 ;
+    font-family:'Poppins' , 'sans-serif';
+}
+
+.contact .title{
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact .contact-content .column{
+    width: calc(50% - 30%);
+}
+
+.contact .contact-content .text{
+    font-size: 20px;
+}
